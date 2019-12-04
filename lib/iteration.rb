@@ -25,8 +25,13 @@ def find_greater_pair(src)
   counter = 0 
   large_array = []
   while counter < src.length do
-    if src[counter].
+    if src[counter][0] > src[counter][1]
+      large_array.push(src[counter][0])
+    else
+      large_array.push(src[counter][1])
+    end
   end
+  return large_array
 end
 
 def total_even_pairs(src)
@@ -37,4 +42,9 @@ def total_even_pairs(src)
   # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
   # the number was even. Review the operator documentation if you've forgotten
   # this!
+  counter = 0
+  total = 0
+  while counter < src.length do 
+    if (src[counter][0] % 2 == 0 && src[counter[1] % 2 == 0)
+      total += 
 end
